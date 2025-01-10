@@ -1,26 +1,26 @@
 <div class="login-container">
   <div class="login-box">
-    <h2 class="login-title">Log in</h2>
+    <h2 class="login-title">Đăng nhập</h2>
     <form action="<%= session_path(resource_name) %>" method="post">
       <div class="input-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="user[email]" required autofocus autocomplete="email">
+        <input type="email" id="email" name="user[email]" required autofocus autocomplete="email" placeholder="Nhập tên đăng nhập">
       </div>
       <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="user[password]" required autocomplete="current-password">
+        <label for="password">Mật khẩu</label>
+        <input type="password" id="password" name="user[password]" required autocomplete="current-password" placeholder="Nhập mật khẩu">
       </div>
       <% if devise_mapping.rememberable? %>
         <div class="checkbox-group">
           <input type="checkbox" id="remember_me" name="user[remember_me]">
-          <label for="remember_me">Remember me</label>
+          <label for="remember_me">Ghi nhớ mật khẩu</label>
         </div>
       <% end %>
-      <button type="submit" class="btn-primary">Log in</button>
+      <button type="submit" class="btn-login">Đăng nhập</button>
     </form>
     <div class="links">
-      <a href="<%= new_user_registration_path %>">Sign up</a>
-      <a href="<%= new_user_password_path %>">Forgot your password?</a>
+      <a href="<%= new_user_registration_path %>">Đăng ký</a>
+      <a href="<%= new_user_password_path %>">Quên mật khẩu?</a>
     </div>
   </div>
 </div>
