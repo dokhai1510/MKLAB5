@@ -85,6 +85,7 @@ production:
   primary: &primary_production
     <<: *default
     database: mklab5_production
+    url: <%= ENV['DATABASE_URL'] %>
     username: mklab5
     password: <%= ENV["MKLAB5_DATABASE_PASSWORD"] %>
   cache:
