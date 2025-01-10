@@ -1,21 +1,30 @@
-<%= form_with model: product do |form| %>
-    <div>
-      <%= form.label :name %>
-      <%= form.text_field :name %>
-    </div>
-  
-    <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.rich_text_area :description %>
-  </div>
+<div class="custom-body">
+  <div class="form-container">
+    <h2 class="form-title">Product Form</h2>
+    <%= form_with model: product do |form| %>
+      
+      <!-- Name Field -->
+      <div class="form-group">
+        <%= form.label :name, class: "form-label" %>
+        <%= form.text_field :name, class: "form-input" %>
+      </div>
 
-  <div>
-    <%= form.label :featured_image, style: "display: block" %>
-    <%= form.file_field :featured_image, accept: "image/*" %>
-  </div>
-  
-    <div>
-      <%= form.submit %>
+      <!-- Description Field -->
+      <div class="form-group">
+        <%= form.label :description, class: "form-label" %>
+        <%= form.rich_text_area :description, class: "form-textarea" %>
+      </div>
+
+      <!-- Featured Image Field -->
+      <div class="form-group">
+        <%= form.label :featured_image, class: "form-label" %>
+        <%= form.file_field :featured_image, accept: "image/*", class: "form-file-input" %>
+      </div>
+      <!-- Submit and Cancel Buttons -->
+      <div class="form-actions">
+        <%= form.submit "Save Product", class: "form-submit" %>
+        <%= link_to "Cancel", @product, class: "cancel-link" %>
+      </div>
+    <% end %>
     </div>
-  <% end %>
-  
+    </div>
