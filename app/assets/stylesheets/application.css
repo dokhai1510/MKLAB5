@@ -107,6 +107,7 @@ body {
 
   /* General Reset */
 body {
+  
     margin: 0;
     font-family: Arial, sans-serif;
   }
@@ -118,7 +119,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     border-bottom: 1px solid #ccc; /* Đường kẻ ngăn cách bên dưới navbar */
-    background-color: transparent; /* Không có màu nền */
+    background-color: #ffffff; /* Không có màu nền */
   }
   
   .nav-item {
