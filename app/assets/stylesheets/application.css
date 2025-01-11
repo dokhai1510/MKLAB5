@@ -210,7 +210,7 @@ body {
     padding: 10px;
     width: 200px;
     text-align: center;
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;  
 }
 
 .product-card:hover {

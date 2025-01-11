@@ -39,3 +39,8 @@ es:
     index:
       title: "Productos"
 
+vi:
+  hello: "Xin chào thế giới"
+  products:
+    index:
+      title: "Sản phẩm"
